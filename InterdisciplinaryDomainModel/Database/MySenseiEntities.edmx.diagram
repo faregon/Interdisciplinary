@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="7aaa759243864e569b834f27c1733b3f" Name="Diagram1">
+        <EntityTypeShape EntityType="MysenseiModel.Role" Width="1.5" PointX="0.75" PointY="2.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="MysenseiModel.User" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
+        <AssociationConnector Association="MysenseiModel.UserRole" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="MysenseiModel.Category" Width="1.5" PointX="3" PointY="6" />
+        <EntityTypeShape EntityType="MysenseiModel.Course" Width="1.5" PointX="5.25" PointY="1.75" />
+        <AssociationConnector Association="MysenseiModel.CategoryID" />
+        <AssociationConnector Association="MysenseiModel.UserID" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
