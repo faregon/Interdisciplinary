@@ -8,3 +8,13 @@ c:\users\nikolay\documents\visual studio 2015\Projects\Interdisciplinary\Interdi
 c:\users\nikolay\documents\visual studio 2015\Projects\Interdisciplinary\InterdisciplinaryDomainModel\obj\Debug\InterdisciplinaryDomainModel.csprojResolveAssemblyReference.cache
 c:\users\nikolay\documents\visual studio 2015\Projects\Interdisciplinary\InterdisciplinaryDomainModel\obj\Debug\InterdisciplinaryDomainModel.dll
 c:\users\nikolay\documents\visual studio 2015\Projects\Interdisciplinary\InterdisciplinaryDomainModel\obj\Debug\InterdisciplinaryDomainModel.pdb
+C:\Users\D'oh\Documents\Visual Studio 2015\Projects\interdisciplinary\InterdisciplinaryDomainModel\bin\Debug\InterdisciplinaryDomainModel.dll.config
+C:\Users\D'oh\Documents\Visual Studio 2015\Projects\interdisciplinary\InterdisciplinaryDomainModel\bin\Debug\InterdisciplinaryDomainModel.dll
+C:\Users\D'oh\Documents\Visual Studio 2015\Projects\interdisciplinary\InterdisciplinaryDomainModel\bin\Debug\InterdisciplinaryDomainModel.pdb
+C:\Users\D'oh\Documents\Visual Studio 2015\Projects\interdisciplinary\InterdisciplinaryDomainModel\bin\Debug\EntityFramework.dll
+C:\Users\D'oh\Documents\Visual Studio 2015\Projects\interdisciplinary\InterdisciplinaryDomainModel\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\D'oh\Documents\Visual Studio 2015\Projects\interdisciplinary\InterdisciplinaryDomainModel\bin\Debug\EntityFramework.xml
+C:\Users\D'oh\Documents\Visual Studio 2015\Projects\interdisciplinary\InterdisciplinaryDomainModel\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\D'oh\Documents\Visual Studio 2015\Projects\interdisciplinary\InterdisciplinaryDomainModel\obj\Debug\InterdisciplinaryDomainModel.csprojResolveAssemblyReference.cache
+C:\Users\D'oh\Documents\Visual Studio 2015\Projects\interdisciplinary\InterdisciplinaryDomainModel\obj\Debug\InterdisciplinaryDomainModel.dll
+C:\Users\D'oh\Documents\Visual Studio 2015\Projects\interdisciplinary\InterdisciplinaryDomainModel\obj\Debug\InterdisciplinaryDomainModel.pdb
