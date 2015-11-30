@@ -1,20 +1,10 @@
 ﻿@model Interdisciplinary.ViewModels.LoginViewModel
 
 @{
-    Layout = null;
+    ViewBag.Title = "Index";
 
-}
-
-<!DOCTYPE html>
-
-<html>
-<head>
-    <meta name="viewport" content="width=device-width" />
-    <title>Login</title>
-</head>
-<body>
-    <div> 
-@using (Html.BeginForm())
+} 
+@using (Html.BeginForm(new { @class = "LoginForm" }))
 {
         @Html.AntiForgeryToken()
         @Html.LabelFor(x => x.Email)
