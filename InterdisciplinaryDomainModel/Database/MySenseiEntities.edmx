@@ -4,7 +4,7 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-    <Schema Namespace="MysenseiModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+    <Schema Namespace="MysenseiModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012.Azure" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityType Name="Category">
           <Key>
             <PropertyRef Name="ID" />
@@ -43,7 +43,6 @@
           <Property Name="Address" Type="varchar" MaxLength="255" />
           <Property Name="Summary" Type="varchar" MaxLength="255" />
           <Property Name="Education" Type="varchar" MaxLength="255" />
-          <Property Name="RoleID" Type="int" />
         </EntityType>
         <EntityType Name="UserRole">
           <Key>
@@ -153,7 +152,6 @@
           <Property Name="Address" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
           <Property Name="Summary" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
           <Property Name="Education" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
-          <Property Name="RoleID" Type="Int32" />
           <NavigationProperty Name="Roles" Relationship="Self.UserRole" FromRole="User" ToRole="Role" />
           <NavigationProperty Name="Courses" Relationship="MysenseiModel.UserID" FromRole="User" ToRole="Course" />
         </EntityType>
@@ -252,7 +250,6 @@
                 <ScalarProperty Name="Address" ColumnName="Address" />
                 <ScalarProperty Name="Summary" ColumnName="Summary" />
                 <ScalarProperty Name="Education" ColumnName="Education" />
-                <ScalarProperty Name="RoleID" ColumnName="RoleID" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>

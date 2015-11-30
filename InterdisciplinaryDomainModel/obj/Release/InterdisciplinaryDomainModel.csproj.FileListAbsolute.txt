@@ -1,0 +1,10 @@
+C:\Users\D'oh\Documents\Visual Studio 2015\Projects\interdisciplinary\InterdisciplinaryDomainModel\bin\Release\InterdisciplinaryDomainModel.dll.config
+C:\Users\D'oh\Documents\Visual Studio 2015\Projects\interdisciplinary\InterdisciplinaryDomainModel\bin\Release\InterdisciplinaryDomainModel.dll
+C:\Users\D'oh\Documents\Visual Studio 2015\Projects\interdisciplinary\InterdisciplinaryDomainModel\bin\Release\InterdisciplinaryDomainModel.pdb
+C:\Users\D'oh\Documents\Visual Studio 2015\Projects\interdisciplinary\InterdisciplinaryDomainModel\bin\Release\EntityFramework.dll
+C:\Users\D'oh\Documents\Visual Studio 2015\Projects\interdisciplinary\InterdisciplinaryDomainModel\bin\Release\EntityFramework.SqlServer.dll
+C:\Users\D'oh\Documents\Visual Studio 2015\Projects\interdisciplinary\InterdisciplinaryDomainModel\bin\Release\EntityFramework.xml
+C:\Users\D'oh\Documents\Visual Studio 2015\Projects\interdisciplinary\InterdisciplinaryDomainModel\bin\Release\EntityFramework.SqlServer.xml
+C:\Users\D'oh\Documents\Visual Studio 2015\Projects\interdisciplinary\InterdisciplinaryDomainModel\obj\Release\InterdisciplinaryDomainModel.csprojResolveAssemblyReference.cache
+C:\Users\D'oh\Documents\Visual Studio 2015\Projects\interdisciplinary\InterdisciplinaryDomainModel\obj\Release\InterdisciplinaryDomainModel.dll
+C:\Users\D'oh\Documents\Visual Studio 2015\Projects\interdisciplinary\InterdisciplinaryDomainModel\obj\Release\InterdisciplinaryDomainModel.pdb
