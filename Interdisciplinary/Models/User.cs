@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Web;
 
@@ -11,6 +12,8 @@ namespace Interdisciplinary.Models
         public string LastName { get; set; }
         public string City { get; set; }
         public string Password { get; set; }
+        [Compare("Password")]
+        public string ConfirmPassword { get; set; }
         public string Email { get; set; }
         public string Birthday { get; set; }
         public string Adress { get; set; }
