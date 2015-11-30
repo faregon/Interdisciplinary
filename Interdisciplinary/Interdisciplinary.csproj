@@ -129,6 +129,7 @@
     <Folder Include="App_Data\" />
     <Folder Include="Models\" />
     <Folder Include="Views\Role\" />
+    <Folder Include="Views\Shared\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\InterdisciplinaryDomainModel\InterdisciplinaryDomainModel.csproj">
