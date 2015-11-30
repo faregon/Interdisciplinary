@@ -1,0 +1,45 @@
+@import 'reset';
+
+$primary-color: black;
+$font-stack:    Verdanna, sans-serif;
+
+body {
+    color: $primary-color;
+    font: $font-stack;
+
+}
+
+ .LoginForm{
+font : $font-stack;
+margin: 60px;
+ }          
+ .navbar-brand {
+     height: 15%;
+     display: block;
+     border: 1px solid black;
+ }
+ .navbar-inverse {
+    background-color: #222;
+    border-color: #080808;
+    }
+ .navbar-fixed-top {
+    top: 0px;
+    z-index: 1030;
+}
+ .signupform {
+     ul
+            {
+                  .SignUpForm{
+     float: right;
+     border: 1px dotted black;
+     margin: 20px;
+     }
+} 
+
+ }
+ .student-signup
+ {
+     margin-top: -20%;
+     float: right;
+ }
+/*# sourceMappingURL=style.css.map */

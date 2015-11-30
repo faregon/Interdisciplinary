@@ -12,8 +12,10 @@ namespace Interdisciplinary.Models
         public string LastName { get; set; }
         public string City { get; set; }
         public string Password { get; set; }
-        [Compare("Password")]
+
+        [CompareAttribute("Password", ErrorMessage = "Passwords mismatch")]
         public string ConfirmPassword { get; set; }
+        [Required]
         public string Email { get; set; }
         public string Birthday { get; set; }
         public string Adress { get; set; }
