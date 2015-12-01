@@ -11,6 +11,7 @@
     <WebStackScaffolding_AreaDialogWidth>600</WebStackScaffolding_AreaDialogWidth>
     <WebStackScaffolding_DbContextTypeFullName>InterdisciplinaryDomainModel.Database.MysenseiEntities</WebStackScaffolding_DbContextTypeFullName>
     <WebStackScaffolding_IsViewGenerationSelected>True</WebStackScaffolding_IsViewGenerationSelected>
+    <NameOfLastUsedPublishProfile>mys3nsei</NameOfLastUsedPublishProfile>
   </PropertyGroup>
   <ProjectExtensions>
     <VisualStudio>

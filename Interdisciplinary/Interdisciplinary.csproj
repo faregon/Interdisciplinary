@@ -98,6 +98,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\Site.css" />
+    <Content Include="Content\style\style.css" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Areas\Admin\Views\web.config" />
@@ -122,6 +123,9 @@
     <Content Include="Areas\Admin\Views\Categories\Edit.cshtml" />
     <Content Include="Areas\Admin\Views\Categories\Index.cshtml" />
     <Content Include="Content\Site.scss" />
+    <Content Include="Content\style\reset.scss" />
+    <Content Include="Content\style\style.css.map" />
+    <Content Include="Content\style\style.scss" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
