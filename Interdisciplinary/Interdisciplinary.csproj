@@ -97,6 +97,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\Images\Binoculers.jpg" />
+    <Content Include="Content\Images\languages.png" />
+    <Content Include="Content\Images\logo.png" />
+    <Content Include="Content\Images\music copy.png" />
+    <Content Include="Content\Images\sports.png" />
+    <Content Include="Content\Images\tech.png" />
+    <Content Include="Content\reset.css" />
     <Content Include="Content\Site.css" />
     <Content Include="Content\style\style.css" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />

@@ -1,15 +1,8 @@
 ﻿@model InterdisciplinaryDomainModel.Database.User
 
-<!DOCTYPE html>
 
-<html>
-<head>
-    <meta name="viewport" content="width=device-width" />
-    <title>Login</title>
-</head>
-<body>
     <div>
-        @using (Html.BeginForm("SignUpPartial", "Login", FormMethod.Post))
+        @using (Html.BeginForm("SignUpPartial", "Login", FormMethod.Post, new { @class ="signupform"}))
         {
             @Html.AntiForgeryToken()
             @Html.LabelFor(x => x.FirstName)
@@ -36,6 +29,5 @@
             <input type="submit" value="submit" />
         }
     </div>
-</body>
-</html>
+
 

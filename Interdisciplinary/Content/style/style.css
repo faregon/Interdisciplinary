@@ -46,12 +46,14 @@ table {
   border-spacing: 0; }
 
 body {
+  margin: 0 auto;
   color: black;
   font: Verdanna, sans-serif; }
 
 .LoginForm {
   font: Verdanna, sans-serif;
-  margin: 60px; }
+  top: 5%;
+  border: 1px solid black; }
 
 .navbar-brand {
   height: 15%;
@@ -66,13 +68,16 @@ body {
   top: 0px;
   z-index: 1030; }
 
-.signupform ul .SignUpForm {
+.signupform {
   float: right;
   border: 1px dotted black;
   margin: 20px; }
+  .signupform .SignUpForm {
+    border: 1px dotted black; }
 
-.student-signup {
-  margin-top: -15%;
+.signupform-student {
+  border: 1px solid black;
+  margin-top: 15%;
   float: right; }
 
 /*# sourceMappingURL=style.css.map */

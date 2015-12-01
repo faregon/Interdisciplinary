@@ -1,18 +1,74 @@
-﻿body {
-    padding-top: 50px;
-    padding-bottom: 20px;
-}
+html, body {
+  width: 100%;
+  height: 100%; }
 
-/* Set padding to keep content from hitting the edges */
-.body-content {
-    padding-left: 15px;
-    padding-right: 15px;
-}
+section {
+  width: 100%; }
 
-/* Set width on the form input elements since they're 100% wide by default */
-input,
-select,
-textarea {
-    max-width: 280px;
-}
+.intro {
+  height: 40%;
+  background-image: url(../Content/Images/Binoculers.jpg);
+  background-position: center;
+  overflow: hidden;
+  background-size: cover; }
+  .intro img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -10%;
+    width: 110%; }
+  .intro h3 {
+    color: white;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -20%;
+    font-size: 180%; }
 
+.categories {
+  height: 40%; }
+  .categories div {
+    width: 50%;
+    height: 50%;
+    background-color: #DB8A52;
+    box-shadow: inset 0px 0px 0px 1px white; }
+  .categories .pull-left {
+    float: left; }
+  .categories .pull-right {
+    float: right; }
+  .categories img {
+    display: block;
+    width: 35%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+    overflow: hidden; }
+  .categories h2 {
+    color: white;
+    text-align: center;
+    overflow: hidden; }
+
+.signUp {
+  height: 20%;
+  background-color: #1b1b1b;
+  padding-top: 2%; }
+  .signUp .browseButton {
+    height: 32%;
+    background-color: #DB8A52;
+    border: 1px solid white;
+    text-align: center;
+    margin: 0 auto;
+    display: table;
+    color: white; }
+  .signUp .studentButton, .signUp .teacherButton {
+    height: 40%;
+    width: 35%;
+    background-color: #47b7b7;
+    border: 1px solid white;
+    text-align: center;
+    margin: 0 auto;
+    color: white;
+    margin-left: 10%;
+    margin-top: 2%; }
+
+/*# sourceMappingURL=site.css.map */
