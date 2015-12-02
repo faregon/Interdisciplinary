@@ -76,3 +76,42 @@ C:\Users\D'oh\Documents\Visual Studio 2015\Projects\interdisciplinary\Interdisci
 C:\Users\D'oh\Documents\Visual Studio 2015\Projects\interdisciplinary\Interdisciplinary\obj\Debug\Interdisciplinary.csprojResolveAssemblyReference.cache
 C:\Users\D'oh\Documents\Visual Studio 2015\Projects\interdisciplinary\Interdisciplinary\obj\Debug\Interdisciplinary.dll
 C:\Users\D'oh\Documents\Visual Studio 2015\Projects\interdisciplinary\Interdisciplinary\obj\Debug\Interdisciplinary.pdb
+C:\Users\Nikolay\Desktop\interdisciplinary\Interdisciplinary\bin\roslyn\csc.exe
+C:\Users\Nikolay\Desktop\interdisciplinary\Interdisciplinary\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Nikolay\Desktop\interdisciplinary\Interdisciplinary\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Nikolay\Desktop\interdisciplinary\Interdisciplinary\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Nikolay\Desktop\interdisciplinary\Interdisciplinary\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Nikolay\Desktop\interdisciplinary\Interdisciplinary\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Nikolay\Desktop\interdisciplinary\Interdisciplinary\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Nikolay\Desktop\interdisciplinary\Interdisciplinary\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Nikolay\Desktop\interdisciplinary\Interdisciplinary\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Nikolay\Desktop\interdisciplinary\Interdisciplinary\bin\roslyn\vbc.exe
+C:\Users\Nikolay\Desktop\interdisciplinary\Interdisciplinary\bin\roslyn\VBCSCompiler.exe
+C:\Users\Nikolay\Desktop\interdisciplinary\Interdisciplinary\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Nikolay\Desktop\interdisciplinary\Interdisciplinary\bin\Interdisciplinary.dll.config
+C:\Users\Nikolay\Desktop\interdisciplinary\Interdisciplinary\bin\Interdisciplinary.dll
+C:\Users\Nikolay\Desktop\interdisciplinary\Interdisciplinary\bin\Interdisciplinary.pdb
+C:\Users\Nikolay\Desktop\interdisciplinary\Interdisciplinary\bin\EntityFramework.dll
+C:\Users\Nikolay\Desktop\interdisciplinary\Interdisciplinary\bin\EntityFramework.SqlServer.dll
+C:\Users\Nikolay\Desktop\interdisciplinary\Interdisciplinary\bin\InterdisciplinaryDomainModel.dll
+C:\Users\Nikolay\Desktop\interdisciplinary\Interdisciplinary\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Nikolay\Desktop\interdisciplinary\Interdisciplinary\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Nikolay\Desktop\interdisciplinary\Interdisciplinary\bin\System.Web.Helpers.dll
+C:\Users\Nikolay\Desktop\interdisciplinary\Interdisciplinary\bin\System.Web.Mvc.dll
+C:\Users\Nikolay\Desktop\interdisciplinary\Interdisciplinary\bin\System.Web.Razor.dll
+C:\Users\Nikolay\Desktop\interdisciplinary\Interdisciplinary\bin\System.Web.Webpages.Deployment.dll
+C:\Users\Nikolay\Desktop\interdisciplinary\Interdisciplinary\bin\System.Web.Webpages.dll
+C:\Users\Nikolay\Desktop\interdisciplinary\Interdisciplinary\bin\System.Web.Webpages.Razor.dll
+C:\Users\Nikolay\Desktop\interdisciplinary\Interdisciplinary\bin\InterdisciplinaryDomainModel.pdb
+C:\Users\Nikolay\Desktop\interdisciplinary\Interdisciplinary\bin\EntityFramework.xml
+C:\Users\Nikolay\Desktop\interdisciplinary\Interdisciplinary\bin\EntityFramework.SqlServer.xml
+C:\Users\Nikolay\Desktop\interdisciplinary\Interdisciplinary\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Nikolay\Desktop\interdisciplinary\Interdisciplinary\bin\System.Web.Razor.xml
+C:\Users\Nikolay\Desktop\interdisciplinary\Interdisciplinary\bin\System.Web.Webpages.xml
+C:\Users\Nikolay\Desktop\interdisciplinary\Interdisciplinary\bin\System.Web.Webpages.Deployment.xml
+C:\Users\Nikolay\Desktop\interdisciplinary\Interdisciplinary\bin\System.Web.Webpages.Razor.xml
+C:\Users\Nikolay\Desktop\interdisciplinary\Interdisciplinary\bin\System.Web.Helpers.xml
+C:\Users\Nikolay\Desktop\interdisciplinary\Interdisciplinary\bin\System.Web.Mvc.xml
+C:\Users\Nikolay\Desktop\interdisciplinary\Interdisciplinary\obj\Debug\Interdisciplinary.csprojResolveAssemblyReference.cache
+C:\Users\Nikolay\Desktop\interdisciplinary\Interdisciplinary\obj\Debug\Interdisciplinary.dll
+C:\Users\Nikolay\Desktop\interdisciplinary\Interdisciplinary\obj\Debug\Interdisciplinary.pdb

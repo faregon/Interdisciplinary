@@ -10,7 +10,6 @@ namespace Interdisciplinary.Controllers
 {
     public class HomeController : Controller
     {
-      [Authorize]
         public ActionResult Index()
         {
             var DB = new MysenseiEntities();

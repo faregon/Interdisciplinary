@@ -18,3 +18,13 @@ C:\Users\D'oh\Documents\Visual Studio 2015\Projects\interdisciplinary\Interdisci
 C:\Users\D'oh\Documents\Visual Studio 2015\Projects\interdisciplinary\InterdisciplinaryDomainModel\obj\Debug\InterdisciplinaryDomainModel.csprojResolveAssemblyReference.cache
 C:\Users\D'oh\Documents\Visual Studio 2015\Projects\interdisciplinary\InterdisciplinaryDomainModel\obj\Debug\InterdisciplinaryDomainModel.dll
 C:\Users\D'oh\Documents\Visual Studio 2015\Projects\interdisciplinary\InterdisciplinaryDomainModel\obj\Debug\InterdisciplinaryDomainModel.pdb
+C:\Users\Nikolay\Desktop\interdisciplinary\InterdisciplinaryDomainModel\bin\Debug\InterdisciplinaryDomainModel.dll.config
+C:\Users\Nikolay\Desktop\interdisciplinary\InterdisciplinaryDomainModel\bin\Debug\InterdisciplinaryDomainModel.dll
+C:\Users\Nikolay\Desktop\interdisciplinary\InterdisciplinaryDomainModel\bin\Debug\InterdisciplinaryDomainModel.pdb
+C:\Users\Nikolay\Desktop\interdisciplinary\InterdisciplinaryDomainModel\bin\Debug\EntityFramework.dll
+C:\Users\Nikolay\Desktop\interdisciplinary\InterdisciplinaryDomainModel\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Nikolay\Desktop\interdisciplinary\InterdisciplinaryDomainModel\bin\Debug\EntityFramework.xml
+C:\Users\Nikolay\Desktop\interdisciplinary\InterdisciplinaryDomainModel\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Nikolay\Desktop\interdisciplinary\InterdisciplinaryDomainModel\obj\Debug\InterdisciplinaryDomainModel.csprojResolveAssemblyReference.cache
+C:\Users\Nikolay\Desktop\interdisciplinary\InterdisciplinaryDomainModel\obj\Debug\InterdisciplinaryDomainModel.dll
+C:\Users\Nikolay\Desktop\interdisciplinary\InterdisciplinaryDomainModel\obj\Debug\InterdisciplinaryDomainModel.pdb
