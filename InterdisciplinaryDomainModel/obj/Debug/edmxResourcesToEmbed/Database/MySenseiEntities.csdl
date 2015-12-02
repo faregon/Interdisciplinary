@@ -62,8 +62,8 @@
     </Key>
     <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Name="CourseName" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
-    <Property Name="UserID" Type="Int32" />
     <Property Name="CategoryID" Type="Int32" Nullable="false" />
+    <Property Name="UserID" Type="Int32" />
     <NavigationProperty Name="Category" Relationship="MysenseiModel.CategoryID" FromRole="Course" ToRole="Category" />
     <NavigationProperty Name="User" Relationship="MysenseiModel.UserID" FromRole="Course" ToRole="User" />
   </EntityType>

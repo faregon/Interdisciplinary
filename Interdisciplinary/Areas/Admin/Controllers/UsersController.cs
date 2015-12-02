@@ -10,17 +10,17 @@ using InterdisciplinaryDomainModel.Database;
 
 namespace Interdisciplinary.Areas.Admin.Controllers
 {
-    public class UserController : Controller
+    public class UsersController : Controller
     {
         private MysenseiEntities db = new MysenseiEntities();
 
-        // GET: Admin/User
+        // GET: Admin/Users
         public ActionResult Index()
         {
             return View(db.Users.ToList());
         }
 
-        // GET: Admin/User/Details/5
+        // GET: Admin/Users/Details/5
         public ActionResult Details(int? id)
         {
             if (id == null)
@@ -35,13 +35,13 @@ namespace Interdisciplinary.Areas.Admin.Controllers
             return View(user);
         }
 
-        // GET: Admin/User/Create
+        // GET: Admin/Users/Create
         public ActionResult Create()
         {
             return View();
         }
 
-        // POST: Admin/User/Create
+        // POST: Admin/Users/Create
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
@@ -58,7 +58,7 @@ namespace Interdisciplinary.Areas.Admin.Controllers
             return View(user);
         }
 
-        // GET: Admin/User/Edit/5
+        // GET: Admin/Users/Edit/5
         public ActionResult Edit(int? id)
         {
             if (id == null)
@@ -73,7 +73,7 @@ namespace Interdisciplinary.Areas.Admin.Controllers
             return View(user);
         }
 
-        // POST: Admin/User/Edit/5
+        // POST: Admin/Users/Edit/5
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
@@ -89,7 +89,7 @@ namespace Interdisciplinary.Areas.Admin.Controllers
             return View(user);
         }
 
-        // GET: Admin/User/Delete/5
+        // GET: Admin/Users/Delete/5
         public ActionResult Delete(int? id)
         {
             if (id == null)
@@ -104,7 +104,7 @@ namespace Interdisciplinary.Areas.Admin.Controllers
             return View(user);
         }
 
-        // POST: Admin/User/Delete/5
+        // POST: Admin/Users/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(int id)

@@ -5,6 +5,9 @@ html, body {
 section {
   width: 100%; }
 
+.quotes {
+  display: none; }
+
 .intro {
   height: 40%;
   background-image: url(../Content/Images/Binoculers.jpg);
@@ -23,7 +26,7 @@ section {
     margin-left: auto;
     margin-right: auto;
     margin-top: -20%;
-    font-size: 180%; }
+    font-size: 120%; }
 
 .categories {
   height: 40%; }
@@ -71,4 +74,8 @@ section {
     margin-left: 10%;
     margin-top: 2%; }
 
-/*# sourceMappingURL=site.css.map */
+.form-control {
+  display: inline-block;
+  text-align: center; }
+
+/*# sourceMappingURL=Site.css.map */

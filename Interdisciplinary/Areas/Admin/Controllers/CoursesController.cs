@@ -49,7 +49,7 @@ namespace Interdisciplinary.Areas.Admin.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "ID,CourseName,UserID,CategoryID")] Course course)
+        public ActionResult Create([Bind(Include = "ID,CourseName,CategoryID,UserID")] Course course)
         {
             if (ModelState.IsValid)
             {
@@ -85,7 +85,7 @@ namespace Interdisciplinary.Areas.Admin.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "ID,CourseName,UserID,CategoryID")] Course course)
+        public ActionResult Edit([Bind(Include = "ID,CourseName,CategoryID,UserID")] Course course)
         {
             if (ModelState.IsValid)
             {

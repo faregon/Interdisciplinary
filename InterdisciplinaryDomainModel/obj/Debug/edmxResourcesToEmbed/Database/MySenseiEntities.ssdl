@@ -13,8 +13,8 @@
     </Key>
     <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="CourseName" Type="varchar" MaxLength="255" />
-    <Property Name="UserID" Type="int" />
     <Property Name="CategoryID" Type="int" Nullable="false" />
+    <Property Name="UserID" Type="int" />
   </EntityType>
   <EntityType Name="Role">
     <Key>

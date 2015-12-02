@@ -35,20 +35,6 @@ namespace Interdisciplinary.Controllers
             }
             return View();
         }
-        [HttpGet]
-        public ActionResult SignUpPartial()
-        {
-            return PartialView();
-        }
-        [HttpPost]
-        public ActionResult SignUpPartial(User user)
-        {
-            if (ModelState.IsValid)
-            {
-                DB.Users.Add(user);
-                DB.SaveChanges();
-            }
-            return RedirectToAction("Login","Login");
-        }
+      
     }
 }

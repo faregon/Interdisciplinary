@@ -9,10 +9,10 @@
         <EntityTypeShape EntityType="MysenseiModel.User" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
         <AssociationConnector Association="MysenseiModel.UserRole" ManuallyRouted="false" />
         <EntityTypeShape EntityType="MysenseiModel.Category" Width="1.5" PointX="3" PointY="6" />
-        <EntityTypeShape EntityType="MysenseiModel.Course" Width="1.5" PointX="5.25" PointY="1.75" />
+        <EntityTypeShape EntityType="MysenseiModel.Course" Width="1.5" PointX="5.25" PointY="3.25" />
         <AssociationConnector Association="MysenseiModel.CategoryID" />
         <AssociationConnector Association="MysenseiModel.UserID" />
-      </Diagram>
+        </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>
 </edmx:Edmx>

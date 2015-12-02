@@ -16,8 +16,8 @@ namespace InterdisciplinaryDomainModel.Database
     {
         public int ID { get; set; }
         public string CourseName { get; set; }
-        public Nullable<int> UserID { get; set; }
         public int CategoryID { get; set; }
+        public Nullable<int> UserID { get; set; }
     
         public virtual Category Category { get; set; }
         public virtual User User { get; set; }
