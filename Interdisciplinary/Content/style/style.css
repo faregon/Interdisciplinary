@@ -47,11 +47,11 @@ table {
 
 body {
   margin: 0 auto;
-  color: black;
-  font: Verdanna, sans-serif; }
+  color: red;
+  font: Cambria; }
 
 .LoginForm {
-  font: Verdanna, sans-serif;
+  font: Cambria;
   top: 5%;
   border: 1px solid black; }
 
@@ -68,17 +68,32 @@ body {
   top: 0px;
   z-index: 1030; }
 
-.signupform {
-  float: right;
-  border: 1px dotted black;
-  margin: 20px; }
-  .signupform .SignUpForm {
-    border: 1px dotted black; }
-
 .signupform-student {
-  border: 1px solid black;
-  margin-top: 15%;
+  border: 10px solid black;
+  margin-top: 5%;
   float: right; }
+  .signupform-student input {
+    border: 5px solid black;
+    display: block;
+    box-sizing: border-box; }
+
+::-webkit-input-placeholder {
+  color: red;
+  font: Cambria; }
+
+:-moz-placeholder {
+  /* Firefox 18- */
+  color: red;
+  font: Cambria; }
+
+::-moz-placeholder {
+  /* Firefox 19+ */
+  color: red;
+  font: Cambria; }
+
+:-ms-input-placeholder {
+  color: red;
+  font: Cambria; }
 
 /*# sourceMappingURL=style.css.map */
 

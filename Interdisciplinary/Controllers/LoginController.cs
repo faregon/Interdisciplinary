@@ -33,7 +33,7 @@ namespace Interdisciplinary.Controllers
                 ModelState.AddModelError("","Wrong credentials");
                 return RedirectToAction("Index", "Category");
             }
-            return View();
+         
         }
       
     }

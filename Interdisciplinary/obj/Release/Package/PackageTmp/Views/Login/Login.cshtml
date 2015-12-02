@@ -1,19 +1,14 @@
 ﻿@model Interdisciplinary.ViewModels.LoginViewModel
 
 @{
-    Layout = null;
-
+    ViewBag.Title = "Login";
 }
 
-<!DOCTYPE html>
 
-<html>
-<head>
-    <meta name="viewport" content="width=device-width" />
-    <title>Login</title>
-</head>
+
 <body>
     <div> 
+
 @using (Html.BeginForm())
 {
         @Html.AntiForgeryToken()
@@ -24,8 +19,6 @@
         @Html.ValidationSummary()
     <input type="submit" value="submit" />
 }
-        @Html.Partial("_SignUpPartial")
-        @Html.Partial("_SignUpPartialStudent")
+
     </div>
 </body>
-</html>

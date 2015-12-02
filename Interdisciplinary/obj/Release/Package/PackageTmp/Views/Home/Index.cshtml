@@ -1,4 +1,4 @@
-﻿@model IEnumerable<InterdisciplinaryDomainModel.Database.Role>
+﻿
 
 @{
     Layout = null;
@@ -8,17 +8,48 @@
 
 <html>
 <head>
-    <meta name="viewport" content="width=device-width" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="~/Content/Site.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/style/style.css" rel="stylesheet" />
     <title>Index</title>
-    
 </head>
 <body>
-    <div> 
-       @foreach (var role in Model)
-       {
-           @role.RoleNname <br/>
-       }
+    <section class="intro">
+        <img src="~/Content/Images/logo.png" />
+        <h3>IS YOUR</h3>
+        <h2 class="quotes">first quote</h2>
+        <h2 class="quotes">second quote</h2>​
+    </section>
+    <section class="categories">
+        <div class="aqua pull-left">
+            <img src="~/Content/Images/languages.png" />
+            <h2>LANGUAGES</h2>
+        </div>
 
-    </div>
+        <div class="blue pull-right">
+            <img src="~/Content/Images/music copy.png" />
+            <h2>MUSIC</h2>
+        </div>
+
+        <div class="green pull-left bottom">
+            <img src="~/Content/Images/sports.png" />
+            <h2>SPORTS</h2>
+        </div>
+
+        <div class="tan pull-right bottom">
+            <img src="~/Content/Images/tech.png" />
+            <h2>TECHNOLOGY</h2>
+        </div>
+
+    </section>
+    <section class="signUp">
+        <button class="browseButton">BROWSE MORE</button>
+        <button class="teacherButton">BECOME A TEACHER</button>
+        <button class="studentButton">BECOME A STUDENT</button>
+    </section>
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+    <script src="~/Scripts/main.js"></script>
+    <script></script>
 </body>
 </html>
