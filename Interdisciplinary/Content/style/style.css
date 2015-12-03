@@ -48,64 +48,83 @@ table {
 @font-face {
   font-family: 'Logo_Font_FingerpaintRegular';
   src: url("../font/Logo_Font_FingerpaintRegular.ttf") format("truetype"); }
-body {
+@font-face {
+  font-family: 'helv4light';
+  src: url("../font/helv4light.ttf") format("truetype"); }
+body, html {
+  width: 100%;
+  height: 100%;
   margin: 0 auto;
-  color: red;
-  font: Logo_Font_FingerpaintRegular; }
-
-.LoginForm {
-  font: Logo_Font_FingerpaintRegular;
-  top: 5%;
-  border: 1px solid black; }
-
-.navbar-brand {
-  height: 15%;
-  display: block;
-  border: 1px solid black; }
-
-.navbar-inverse {
-  background-color: #222;
-  border-color: #080808; }
-
-.navbar-fixed-top {
-  top: 0px;
-  z-index: 1030; }
-
-.signupform-student {
-  margin-top: 5%;
-  margin-left: 10%;
-  display: inline-block;
+  color: black;
   font-family: Logo_Font_FingerpaintRegular; }
-  .signupform-student input {
-    width: 300px;
-    border: 5px solid black;
+
+header {
+  height: 10%;
+  width: 100%;
+  background-color: #1b1b1b;
+  opacity: 0.8; }
+
+.head {
+  background-color: orangered;
+  height: 10%; }
+  .head h2 {
+    font: Logo_Font_FingerpaintRegular;
+    text-align: center;
+    padding-top: 4%; }
+
+.container {
+  background-color: #1b1b1b;
+  opacity: 0.8;
+  height: 100%; }
+  .container .LoginForm {
+    font-family: Logo_Font_FingerpaintRegular;
+    top: 5%;
+    border: 1px solid black; }
+  .container .navbar-brand {
+    height: 15%;
     display: block;
-    box-sizing: border-box; }
-  .signupform-student #Birthday {
-    width: 200px; }
-  .signupform-student #City {
-    float: left;
-    width: 100px; }
-  .signupform-student #Address {
-    width: 200px; }
-
-::-webkit-input-placeholder {
-  color: red;
-  font: Logo_Font_FingerpaintRegular; }
-
-:-moz-placeholder {
-  /* Firefox 18- */
-  color: red;
-  font: Logo_Font_FingerpaintRegular; }
-
-::-moz-placeholder {
-  /* Firefox 19+ */
-  color: red;
-  font: Logo_Font_FingerpaintRegular; }
-
-:-ms-input-placeholder {
-  color: red;
-  font: Logo_Font_FingerpaintRegular; }
+    border: 1px solid black; }
+  .container .navbar-inverse {
+    background-color: #222;
+    border-color: #080808; }
+  .container .navbar-fixed-top {
+    top: 0px;
+    z-index: 1030; }
+  .container .signupform-student {
+    margin-top: 5%;
+    margin-left: 10%;
+    display: inline-block; }
+    .container .signupform-student input {
+      font-family: helv4light;
+      width: 300px;
+      border: 5px solid black;
+      display: block;
+      box-sizing: border-box; }
+    .container .signupform-student #Birthday {
+      width: 200px; }
+    .container .signupform-student #City {
+      float: left;
+      width: 100px; }
+    .container .signupform-student #Address {
+      width: 200px; }
+  .container ::-webkit-input-placeholder {
+    color: black;
+    font: Logo_Font_FingerpaintRegular; }
+  .container :-moz-placeholder {
+    /* Firefox 18- */
+    color: black;
+    font: Logo_Font_FingerpaintRegular; }
+  .container ::-moz-placeholder {
+    /* Firefox 19+ */
+    color: black;
+    font: Logo_Font_FingerpaintRegular; }
+  .container :-ms-input-placeholder {
+    color: black;
+    font: Logo_Font_FingerpaintRegular; }
+  .container .signButton {
+    background-color: #47b7b7;
+    margin-left: 100px;
+    width: 100px !important; }
 
 /*# sourceMappingURL=style.css.map */
 

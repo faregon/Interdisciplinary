@@ -19,9 +19,12 @@ namespace Interdisciplinary.Models
         [Display(Name = "Start Date")]
         public string Birthday { get; set; }
         public string Address { get; set; }
+
+        public string Phone { get; set; }
+
         public string Summary { get; set; }
         public string Education { get; set; }
-        public string Phone { get; set; }
+
 
     }
 }

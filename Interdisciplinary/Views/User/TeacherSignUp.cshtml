@@ -3,6 +3,9 @@
     Layout = null;
 }
 
+
+
+
 <!DOCTYPE html>
 
 <html>
@@ -15,10 +18,8 @@
 </head>
 <body>
     <header></header>
-    <section class="head"><h2>StudentSignUp</h2></section>
+        <section class="head"><h2>SIGN UP AS A TEACHER</h2></section>
     <section class="container">
-
-
         <div>
             @using (Html.BeginForm("StudentSignUp", "User", FormMethod.Post, new { @class = "signupform-student" }))
             {
@@ -32,10 +33,14 @@
                     @Html.TextBoxFor(x => x.City, new { placeholder = "City" })
                     @Html.TextBoxFor(x => x.Address, new { placeholder = "Address" })<br />
                     @Html.TextBoxFor(x => x.Phone, new { placeholder = "Phone Number" })<br />
-
+                    @Html.TextBoxFor(x => x.Summary, new { placeholder = "Summary" })<br />
+                    @Html.TextBoxFor(x => x.Education, new { placeholder = "Education" })<br />
                     @Html.ValidationSummary()
                 </p>
-                <input type="submit" value="Sign Up" class="signButton" />
+                <input type="submit" value="submit" class="signButton"/>
             }
         </div>
     </section>
+
+</body>
+</html>
