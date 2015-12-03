@@ -101,6 +101,7 @@
     <Content Include="Content\Images\languages.png" />
     <Content Include="Content\Images\logo.png" />
     <Content Include="Content\Images\music copy.png" />
+    <Content Include="Content\Images\social.png" />
     <Content Include="Content\Images\sports.png" />
     <Content Include="Content\Images\tech.png" />
     <Content Include="Scripts\main.js" />

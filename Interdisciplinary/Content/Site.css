@@ -8,6 +8,13 @@ section {
 .quotes {
   display: none; }
 
+header {
+  display: none; }
+  header img {
+    display: none; }
+  header h1 {
+    display: none; }
+
 .intro {
   height: 40%;
   background-image: url(../Content/Images/Binoculers.jpg);
@@ -18,15 +25,17 @@ section {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-top: -10%;
-    width: 110%; }
+    width: 60%;
+    margin-top: 8%; }
   .intro h3 {
     color: white;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
-    margin-top: -20%;
     font-size: 120%; }
+
+.mission {
+  display: none; }
 
 .categories {
   height: 40%; }
@@ -73,9 +82,93 @@ section {
     color: white;
     margin-left: 10%;
     margin-top: 2%; }
+  .signUp img {
+    display: none; }
+  .signUp p {
+    display: none; }
+  .signUp h1 {
+    display: none; }
 
 .form-control {
   display: inline-block;
   text-align: center; }
+
+@media screen and (min-width: 480px) {
+  header {
+    width: 100%;
+    height: 5%;
+    background-color: black; }
+    header img {
+      width: 8%;
+      margin: 0.5% 0 0 0.5%;
+      display: inline;
+      vertical-align: middle; }
+    header h1 {
+      display: inline;
+      vertical-align: middle;
+      color: white; }
+
+  .intro {
+    height: 70%; }
+    .intro img {
+      float: none;
+      margin-top: 10%;
+      margin-left: 5%;
+      margin-right: 0;
+      width: 35%; }
+    .intro h3 {
+      float: none;
+      margin-top: 5%;
+      text-align: left;
+      margin-left: 17%; }
+
+  .mission {
+    height: 15%;
+    width: 100%;
+    background-color: #47b7b7;
+    padding-top: 5%; }
+    .mission p {
+      color: white;
+      text-align: center; }
+
+  .categories {
+    height: 70%; }
+    .categories img {
+      width: 20%; }
+    .categories h2 {
+      color: white;
+      text-align: center;
+      overflow: hidden; }
+
+  .signUp {
+    height: 35%;
+    padding-top: 0; }
+    .signUp .browseButton {
+      position: relative;
+      top: -63vh;
+      background-color: #47b7b7; }
+    .signUp .studentButton, .signUp .teacherButton {
+      display: none; }
+    .signUp img {
+      width: 17%;
+      display: inline-block;
+      margin-left: 1%; }
+    .signUp .social {
+      float: right;
+      width: 17%;
+      display: inline-block;
+      margin-left: 1%;
+      margin-right: 1%;
+      position: relative;
+      bottom: 80px; }
+    .signUp h1 {
+      color: white;
+      display: inline-block;
+      vertical-align: top;
+      margin-top: 1%; }
+    .signUp p {
+      margin-left: 1%;
+      color: white;
+      display: block; } }
 
 /*# sourceMappingURL=Site.css.map */
