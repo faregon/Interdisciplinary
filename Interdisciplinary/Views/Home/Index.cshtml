@@ -44,9 +44,9 @@
 
     </section>
     <section class="signUp">
-        <button class="browseButton">BROWSE MORE</button>
-        <button class="teacherButton">BECOME A TEACHER</button>
-        <button class="studentButton">BECOME A STUDENT</button>
+        <button onclick="@("window.location.href='" + @Url.Action("Index", "Category") + "'");" class="browseButton">BROWSE MORE</button>
+        <button onclick="@("window.location.href='" + @Url.Action("TeacherSignUp", "User") + "'");" class="teacherButton">BECOME A TEACHER</button>
+        <button onclick="@("window.location.href='" + @Url.Action("StudentSignUp", "User") + "'");" class="studentButton">BECOME A STUDENT</button>
     </section>
     <script src="~/Scripts/jquery-1.10.2.min.js"></script>
     <script src="~/Scripts/main.js"></script>
