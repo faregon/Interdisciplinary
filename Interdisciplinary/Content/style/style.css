@@ -71,11 +71,21 @@ body {
 .signupform-student {
   border: 10px solid black;
   margin-top: 5%;
-  float: right; }
+  margin-left: 20%;
+  display: inline-block;
+  width: 200px; }
   .signupform-student input {
+    width: 200px;
     border: 5px solid black;
     display: block;
     box-sizing: border-box; }
+  .signupform-student #Birthday {
+    width: 100px; }
+  .signupform-student #City {
+    float: left;
+    width: 60px; }
+  .signupform-student #Address {
+    width: 130px; }
 
 ::-webkit-input-placeholder {
   color: red;

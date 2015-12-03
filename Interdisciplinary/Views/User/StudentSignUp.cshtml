@@ -15,10 +15,11 @@
             @Html.TextBoxFor(x => x.LastName, new { placeholder = "Last Name" })<br />
             @Html.PasswordFor(x => x.Password, new { placeholder = "Password" })<br />
             @Html.TextBoxFor(x => x.Email, new { placeholder = "Email" })<br />
-            @Html.TextBoxFor(x => x.Birthday, new { placeholder = "Birthday" })<br />
-            @Html.TextBoxFor(x => x.Phone, new { placeholder = "Phone Number" })<br />
-            @Html.TextBoxFor(x => x.City, new { placeholder = "City" })<br />
+            @Html.TextBoxFor(x => x.Birthday, new { placeholder = "Birthday"})<br />
+            @Html.TextBoxFor(x => x.City, new { placeholder = "City" })
             @Html.TextBoxFor(x => x.Address, new { placeholder = "Address" })<br />
+            @Html.TextBoxFor(x => x.Phone, new { placeholder = "Phone Number" })<br />
+
             @Html.ValidationSummary()
         </p>
         <input type="submit" value="submit" />
