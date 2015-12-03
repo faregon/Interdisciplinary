@@ -1,9 +1,9 @@
 ﻿@model Interdisciplinary.Models.User
 @{
-    ViewBag.Title = "TeacherSignUp";
+    Layout = null;
 }
 
-<h2>TeacherSignUp</h2>
+
 
 
 <!DOCTYPE html>
@@ -17,26 +17,55 @@
     <title>Index</title>
 </head>
 <body>
+    <header></header>
+        <section class="head"></section>
+    <a href="teacher" class="clickable">Teacher</a>
+    <a href="student" class="clickable">Student</a>
+    <section class="container">
+        <div id="teacher" class="box show">
+            <h2>SIGN UP AS A TEACHER</h2>
+            @using (Html.BeginForm("StudentSignUp", "User", FormMethod.Post, new { @class = "signupform-student" }))
+            {
+                @Html.AntiForgeryToken()
+                <p>
+                    @Html.TextBoxFor(x => x.FirstName, new { placeholder = "First Name" })<br />
+                    @Html.TextBoxFor(x => x.LastName, new { placeholder = "Last Name" })<br />
+                    @Html.PasswordFor(x => x.Password, new { placeholder = "Password" })<br />
+                    @Html.TextBoxFor(x => x.Email, new { placeholder = "Email" })<br />
+                    @Html.TextBoxFor(x => x.Birthday, new { placeholder = "Birthday" })<br />
+                    @Html.TextBoxFor(x => x.City, new { placeholder = "City" })
+                    @Html.TextBoxFor(x => x.Address, new { placeholder = "Address" })<br />
+                    @Html.TextBoxFor(x => x.Phone, new { placeholder = "Phone Number" })<br />
+                    @Html.TextBoxFor(x => x.Summary, new { placeholder = "Summary" })<br />
+                    @Html.TextBoxFor(x => x.Education, new { placeholder = "Education" })<br />
+                    @Html.ValidationSummary()
+                </p>
+                <input type="submit" value="submit" class="signButton"/>
+            }
+        </div>
+        <div id="student" class="box hide">
+            <h2>SIGN UP AS A STUDENT</h2>
+            @using (Html.BeginForm("StudentSignUp", "User", FormMethod.Post, new { @class = "signupform-student" }))
+            {
+                @Html.AntiForgeryToken()
+                <p>
+                    @Html.TextBoxFor(x => x.FirstName, new { placeholder = "First Name" })<br />
+                    @Html.TextBoxFor(x => x.LastName, new { placeholder = "Last Name" })<br />
+                    @Html.PasswordFor(x => x.Password, new { placeholder = "Password" })<br />
+                    @Html.TextBoxFor(x => x.Email, new { placeholder = "Email" })<br />
+                    @Html.TextBoxFor(x => x.Birthday, new { placeholder = "Birthday" })<br />
+                    @Html.TextBoxFor(x => x.City, new { placeholder = "City" })
+                    @Html.TextBoxFor(x => x.Address, new { placeholder = "Address" })<br />
+                    @Html.TextBoxFor(x => x.Phone, new { placeholder = "Phone Number" })<br />
 
-    <div>
-        @using (Html.BeginForm("StudentSignUp", "User", FormMethod.Post, new { @class = "signupform-student" }))
-        {
-            @Html.AntiForgeryToken()
-            <p>
-                @Html.TextBoxFor(x => x.FirstName, new { placeholder = "First Name" })<br />
-                @Html.TextBoxFor(x => x.LastName, new { placeholder = "Last Name" })<br />
-                @Html.PasswordFor(x => x.Password, new { placeholder = "Password" })<br />
-                @Html.TextBoxFor(x => x.Email, new { placeholder = "Email" })<br />
-                @Html.TextBoxFor(x => x.Birthday, new { placeholder = "Birthday" })<br />
-                @Html.TextBoxFor(x => x.City, new { placeholder = "City" })
-                @Html.TextBoxFor(x => x.Address, new { placeholder = "Address" })<br />
-                @Html.TextBoxFor(x => x.Phone, new { placeholder = "Phone Number" })<br />
-                @Html.TextBoxFor(x => x.Summary, new { placeholder = "Summary" })<br />
-                @Html.TextBoxFor(x => x.Education, new { placeholder = "Education" })<br />
-                @Html.ValidationSummary()
-            </p>
-            <input type="submit" value="submit" />
-        }
-    </div>
+                    @Html.ValidationSummary()
+                </p>
+                <input type="submit" value="Sign Up" class="signButton" />
+            }
+        </div>
+    </section>
+
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+    <script src="~/Scripts/main.js"></script>
 </body>
 </html>

@@ -135,6 +135,8 @@
     <Content Include="Areas\Admin\Views\Categories\Details.cshtml" />
     <Content Include="Areas\Admin\Views\Categories\Edit.cshtml" />
     <Content Include="Areas\Admin\Views\Categories\Index.cshtml" />
+    <Content Include="Content\font\Logo_Font_FingerpaintRegular.ttf" />
+    <Content Include="Content\font\helv4light.ttf" />
     <None Include="Properties\PublishProfiles\mys3nsei.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />

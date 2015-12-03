@@ -1,0 +1,17 @@
+﻿@model IEnumerable<InterdisciplinaryDomainModel.Database.User>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+@foreach (var user in Model)
+{
+    @user.FirstName <br />
+    foreach (var course in user. Courses)
+    {
+        @course.CourseName <br />
+    }
+    <hr />
+}
