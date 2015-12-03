@@ -31,7 +31,7 @@ namespace Interdisciplinary.Controllers
                 DB.Users.Add(user);
                 DB.SaveChanges();
             }
-            return RedirectToAction("Home", "Index");
+            return RedirectToAction("Index", "Home");
 
            
         }
@@ -47,7 +47,7 @@ namespace Interdisciplinary.Controllers
                 DB.Users.Add(user);
                 DB.SaveChanges();
             }
-            return RedirectToAction("Home", "Index");
+            return RedirectToAction("Index", "Home");
         }
 
         protected override void Dispose(bool disposing)

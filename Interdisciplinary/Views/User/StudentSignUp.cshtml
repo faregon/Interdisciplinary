@@ -1,5 +1,4 @@
-﻿@model InterdisciplinaryDomainModel.Database.User
-
+﻿@model Interdisciplinary.Models.User
 @{
     ViewBag.Title = "StudentSignUp";
 }
@@ -7,7 +6,7 @@
 <h2>StudentSignUp</h2>
 
 <div>
-    @using (Html.BeginForm("SignUpPartial", "Login", FormMethod.Post, new { @class = "signupform-student" }))
+    @using (Html.BeginForm("StudentSignUp", "User", FormMethod.Post, new { @class = "signupform-student" }))
     {
         @Html.AntiForgeryToken()
         @Html.LabelFor(x => x.FirstName)
@@ -24,8 +23,8 @@
         @Html.TextBoxFor(x => x.Phone)
         @Html.LabelFor(x => x.City)
         @Html.TextBoxFor(x => x.City)
-        @Html.LabelFor(x => x.Address)
-        @Html.TextBoxFor(x => x.Address)
+        @Html.LabelFor(x => x.Adress)
+        @Html.TextBoxFor(x => x.Adress)
         @Html.ValidationSummary()
         <input type="submit" value="submit" />
     }
