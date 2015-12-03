@@ -9,23 +9,18 @@
     @using (Html.BeginForm("StudentSignUp", "User", FormMethod.Post, new { @class = "signupform-student" }))
     {
         @Html.AntiForgeryToken()
-        @Html.LabelFor(x => x.FirstName)
-        @Html.TextBoxFor(x => x.FirstName)
-        @Html.LabelFor(x => x.LastName)
-        @Html.TextBoxFor(x => x.LastName)
-        @Html.LabelFor(x => x.Password)
-        @Html.PasswordFor(x => x.Password)
-        @Html.LabelFor(x => x.Email)
-        @Html.TextBoxFor(x => x.Email)
-        @Html.LabelFor(x => x.Birthday)
-        @Html.TextBoxFor(x => x.Birthday)
-        @Html.LabelFor(x => x.Phone)
-        @Html.TextBoxFor(x => x.Phone)
-        @Html.LabelFor(x => x.City)
-        @Html.TextBoxFor(x => x.City)
-        @Html.LabelFor(x => x.Adress)
-        @Html.TextBoxFor(x => x.Adress)
+        <p>
+            @Html.TextBoxFor(x => x.FirstName, new { placeholder = "First Name" })<br />
+            @Html.TextBoxFor(x => x.LastName, new { placeholder = "Last Name" })<br />
+            @Html.PasswordFor(x => x.Password, new { placeholder = "Password" })<br />
+            @Html.TextBoxFor(x => x.Email, new { placeholder = "Email" })<br />
+            @Html.TextBoxFor(x => x.Birthday, new { placeholder = "Birthday"})<br />
+            @Html.TextBoxFor(x => x.City, new { placeholder = "City" })
+            @Html.TextBoxFor(x => x.Address, new { placeholder = "Address" })<br />
+            @Html.TextBoxFor(x => x.Phone, new { placeholder = "Phone Number" })<br />
+
         @Html.ValidationSummary()
+        </p>
         <input type="submit" value="submit" />
     }
 </div>

@@ -4,6 +4,7 @@ $primary-color: black;
 $font-stack:    Verdanna, sans-serif;
 
 body {
+    margin: 0 auto;
     color: $primary-color;
     font: $font-stack;
 
@@ -11,7 +12,8 @@ body {
 
  .LoginForm{
 font : $font-stack;
-margin: 60px;
+top: 5%;
+border: 1px solid black;
  }          
  .navbar-brand {
      height: 15%;
@@ -27,19 +29,18 @@ margin: 60px;
     z-index: 1030;
 }
  .signupform {
-     ul
-            {
-                  .SignUpForm{
-     float: right;
+   float: right;
      border: 1px dotted black;
      margin: 20px;
-     }
+      .SignUpForm{border: 1px dotted black;}
 } 
 
- }
- .student-signup
+ 
+ .signupform-student
  {
-     margin-top: -15%;
+     border: 1px solid black;
+     margin-top: 15%;
      float: right;
  }
+
 /*# sourceMappingURL=style.css.map */

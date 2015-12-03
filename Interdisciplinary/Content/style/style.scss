@@ -1,7 +1,7 @@
 @import 'reset';
 
-$primary-color: black;
-$font-stack:    Verdanna, sans-serif;
+$primary-color: red;
+$font-stack: Cambria;
 
 body {
     margin: 0 auto;
@@ -28,19 +28,53 @@ border: 1px solid black;
     top: 0px;
     z-index: 1030;
 }
- .signupform {
-   float: right;
-     border: 1px dotted black;
-     margin: 20px;
-      .SignUpForm{border: 1px dotted black;}
-} 
+
 
  
  .signupform-student
  {
-     border: 1px solid black;
-     margin-top: 15%;
-     float: right;
+     border: 10px solid black;
+     margin-top: 5%;
+     margin-left: 20%;
+     display: inline-block;
+     width: 200px;
+     input{
+          width: 200px;
+         border: 5px solid black;
+    display: block;
+    box-sizing: border-box;
+     }
+     #Birthday{
+         width: 100px;
+     }
+     #City {
+         
+         float: left;
+         width: 60px;
+     }
+     #Address {
+      
+         width: 130px;
+     }
  }
+::-webkit-input-placeholder {
+   color: $primary-color;
+   font: $font-stack;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: $primary-color;  
+   font: $font-stack;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: $primary-color;  
+   font: $font-stack;
+}
+
+:-ms-input-placeholder {  
+   color: $primary-color;  
+   font: $font-stack;
+}
 
 /*# sourceMappingURL=style.css.map */
