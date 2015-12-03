@@ -1,12 +1,15 @@
 @import 'reset';
+
 @font-face {
     font-family: 'Logo_Font_FingerpaintRegular';
     src: url('../font/Logo_Font_FingerpaintRegular.ttf') format('truetype');
 }
+
 @font-face {
     font-family: 'helv4light';
     src: url('../font/helv4light.ttf') format('truetype');
 }
+
 $primary-color: black;
 $font-family: Logo_Font_FingerpaintRegular;
 $bckd-color: #1b1b1b;
@@ -22,15 +25,16 @@ body, html {
 header {
     height: 10%;
     width: 100%;
-    background-color:$bckd-color;
+    background-color: $bckd-color;
     opacity: 0.8;
 }
 
 .head {
     background-color: orangered;
     height: 10%;
-    h2{
-         font: $font-family;
+
+    h2 {
+        font: $font-family;
         text-align: center;
         padding-top: 4%;
     }
@@ -64,13 +68,11 @@ header {
         z-index: 1030;
     }
 
-
-
     .signupform-student {
         margin-top: 5%;
         margin-left: 10%;
         display: inline-block;
-        
+
 
         input {
             font-family: helv4light;
@@ -92,32 +94,28 @@ header {
         #Address {
             width: 200px;
         }
-        
     }
 
-    ::-webkit-input-placeholder {
+    ::-webkit-input-placeholder, :-moz-placeholder, ::-moz-placeholder, :-ms-input-placeholder {
         color: $primary-color;
         font: $font-family;
     }
 
-    :-moz-placeholder { /* Firefox 18- */
-        color: $primary-color;
-        font: $font-family;
-    }
 
-    ::-moz-placeholder { /* Firefox 19+ */
-        color: $primary-color;
-        font: $font-family;
-    }
-
-    :-ms-input-placeholder {
-        color: $primary-color;
-        font: $font-family;
-    }
-    .signButton{
-        background-color:#47b7b7;
+    .signButton {
+        background-color: #47b7b7;
         margin-left: 100px;
         width: 100px !important;
+    }
+    .box {
+        height: 100vh;
+    }
+    .show {
+        display: block;
+    }
+
+    .hide {
+        display: none;
     }
 }
 /*# sourceMappingURL=style.css.map */

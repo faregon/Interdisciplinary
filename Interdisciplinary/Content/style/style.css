@@ -107,24 +107,19 @@ header {
       width: 100px; }
     .container .signupform-student #Address {
       width: 200px; }
-  .container ::-webkit-input-placeholder {
-    color: black;
-    font: Logo_Font_FingerpaintRegular; }
-  .container :-moz-placeholder {
-    /* Firefox 18- */
-    color: black;
-    font: Logo_Font_FingerpaintRegular; }
-  .container ::-moz-placeholder {
-    /* Firefox 19+ */
-    color: black;
-    font: Logo_Font_FingerpaintRegular; }
-  .container :-ms-input-placeholder {
+  .container ::-webkit-input-placeholder, .container :-moz-placeholder, .container ::-moz-placeholder, .container :-ms-input-placeholder {
     color: black;
     font: Logo_Font_FingerpaintRegular; }
   .container .signButton {
     background-color: #47b7b7;
     margin-left: 100px;
     width: 100px !important; }
+  .container .box {
+    height: 100vh; }
+  .container .show {
+    display: block; }
+  .container .hide {
+    display: none; }
 
 /*# sourceMappingURL=style.css.map */
 
