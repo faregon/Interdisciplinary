@@ -1,19 +1,79 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+@font-face {
+  font-family: 'Logo_Font_FingerpaintRegular';
+  src: url("../font/Logo_Font_FingerpaintRegular.ttf") format("truetype"); }
+@font-face {
+  font-family: 'helv4light';
+  src: url("../font/helv4light.ttf") format("truetype"); }
 html, body {
   width: 100%;
-  height: 100%; }
+  height: 100%;
+  font-family: helv4light; }
 
 section {
   width: 100%; }
 
 .quotes {
-  display: none; }
+  color: white; }
 
-header {
+header img {
   display: none; }
-  header img {
-    display: none; }
-  header h1 {
-    display: none; }
+header h1 {
+  display: none; }
+header h2 {
+  display: none; }
+header .submit {
+  display: none; }
+header .email {
+  display: none; }
+header .password {
+  display: none; }
 
 .intro {
   height: 40%;
@@ -33,6 +93,13 @@ header {
     margin-left: auto;
     margin-right: auto;
     font-size: 120%; }
+  .intro button {
+    display: none; }
+  .intro #rotate {
+    color: white;
+    font-size: 200%;
+    text-align: center;
+    margin-top: 2%; }
 
 .mission {
   display: none; }
@@ -96,7 +163,7 @@ header {
 @media screen and (min-width: 480px) {
   header {
     width: 100%;
-    height: 5%;
+    height: 10%;
     background-color: black; }
     header img {
       width: 8%;
@@ -107,6 +174,38 @@ header {
       display: inline;
       vertical-align: middle;
       color: white; }
+    header .email {
+      display: inline-block;
+      float: right;
+      background-color: black;
+      border: 1px solid white;
+      color: white; }
+    header .password {
+      float: right;
+      display: inline-block;
+      background-color: black;
+      border: 1px solid white;
+      color: white; }
+    header .submit {
+      float: right;
+      display: inline-block;
+      background-color: black;
+      color: white;
+      border: 1px solid white; }
+    header *::-webkit-input-placeholder {
+      color: white; }
+    header *:-moz-placeholder {
+      /* FF 4-18 */
+      color: white; }
+    header *::-moz-placeholder {
+      /* FF 19+ */
+      color: white; }
+    header *:-ms-input-placeholder {
+      /* IE 10+ */
+      color: white; }
+    header .signUpForm {
+      position: relative;
+      top: -15px; }
 
   .intro {
     height: 70%; }
@@ -121,6 +220,27 @@ header {
       margin-top: 5%;
       text-align: left;
       margin-left: 17%; }
+    .intro button {
+      height: 10%;
+      width: 30%;
+      background-color: #47b7b7;
+      border: 1px solid white;
+      text-align: center;
+      display: inline;
+      float: right;
+      position: relative;
+      color: white; }
+    .intro .student {
+      top: -50%;
+      left: 15%; }
+    .intro .teacher {
+      top: -10%;
+      right: 15%; }
+    .intro #rotate {
+      font-size: 300%;
+      margin-left: 5%;
+      margin-top: 2%;
+      text-align: left; }
 
   .mission {
     height: 15%;
@@ -146,7 +266,8 @@ header {
     .signUp .browseButton {
       position: relative;
       top: -63vh;
-      background-color: #47b7b7; }
+      background-color: #47b7b7;
+      left: 20vh; }
     .signUp .studentButton, .signUp .teacherButton {
       display: none; }
     .signUp img {

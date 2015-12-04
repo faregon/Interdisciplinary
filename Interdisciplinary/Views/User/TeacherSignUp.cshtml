@@ -12,7 +12,6 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="~/Content/Site.css" rel="stylesheet" type="text/css" />
     <link href="~/Content/style/style.css" rel="stylesheet" />
     <title>Index</title>
 </head>
@@ -24,7 +23,7 @@
     <section class="container">
         <div id="teacher" class="box show">
             <h2>SIGN UP AS A TEACHER</h2>
-            @using (Html.BeginForm("StudentSignUp", "User", FormMethod.Post, new { @class = "signupform-student" }))
+            @using (Html.BeginForm("TeacherSignUp", "User", FormMethod.Post, new { @class = "signupform-student" }))
             {
                 @Html.AntiForgeryToken()
                 <p>

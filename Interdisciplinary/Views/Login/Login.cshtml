@@ -1,24 +1,85 @@
 ﻿@model Interdisciplinary.ViewModels.LoginViewModel
 
 @{
+    Layout = null;
     ViewBag.Title = "Login";
 }
 
+   
 
+<!DOCTYPE html>
 
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="~/Content/Site.css" rel="stylesheet" />
+    <title>Index</title>
+</head>
 <body>
-    <div> 
+    <header>
+        <a href="@Url.Action("Login", "Login")"><img src="~/Content/Images/logo.png" /></a>
+        <h1>| ABOUT</h1>
+        <div class="signUpForm">
+            @using (Html.BeginForm())
+            {
+                @Html.AntiForgeryToken()
+                @Html.TextBoxFor(x => x.Password, new { placeholder = "Password", @class = "password" })
+                @Html.TextBoxFor(x => x.Email, new { placeholder = "Email", @class = "email" })
+                @Html.ValidationSummary()
+                <input class="submit" type="submit" value="Login" />
+            }
+        </div>
+    </header>
+    <section class="intro">
+        <a href="@Url.Action("Login", "Login")"><img src="~/Content/Images/logo.png"  /></a>
+        <h3>IS YOUR</h3>
+        <h2 id="rotate"></h2>
+        <button class="teacher" onclick="@("window.location.href='" + @Url.Action("TeacherSignUp", "User") + "'");" class="teacherButton">BECOME A TEACHER</button>
+        <button class="student" onclick ="@("window.location.href='" + @Url.Action("StudentSignUp", "User") + "'");" class="studentButton">BECOME A STUDENT</button>
+    </section>
+    <section class="mission">
+        <p>"We believe in a world,</p>
+        <p>where skills` development is available for everyone for FREE</p>
+        <p>and is LESS dependent on geography,time & price"</p>
+    </section>
+    <section class="categories">
+        <div class="aqua pull-left">
+            <img src="~/Content/Images/languages.png" />
+            <h2>LANGUAGES</h2>
+        </div>
 
-@using (Html.BeginForm())
-{
-        @Html.AntiForgeryToken()
-        @Html.LabelFor(x => x.Email)
-        @Html.TextBoxFor(x => x.Email)
-        @Html.LabelFor(x => x.Password)
-        @Html.TextBoxFor(x => x.Password)
-        @Html.ValidationSummary()
-    <input type="submit" value="submit" />
-}
+        <div class="blue pull-right">
+            <img src="~/Content/Images/music copy.png" />
+            <h2>MUSIC</h2>
+        </div>
 
-    </div>
+        <div class="green pull-left bottom">
+            <img src="~/Content/Images/sports.png" />
+            <h2>SPORTS</h2>
+        </div>
+
+        <div class="tan pull-right bottom">
+            <img src="~/Content/Images/tech.png" />
+            <h2>TECHNOLOGY</h2>
+        </div>
+    </section>
+    <section class="signUp">
+        <a href="@Url.Action("Login", "Login")"><img src="~/Content/Images/logo.png" /></a>
+        <h1>CONTACT</h1>
+        <p>Sønderhøj 30,</p>
+        <p>Viby J</p>
+        <p>8260</p>
+        <p>Aarhus,Denmark</p>
+        <p>Email</p>
+        <p>Tlf</p>
+        <img class="social" src="~/Content/Images/social.png" />
+        <button onclick="@("window.location.href='" + @Url.Action("Index", "Category") + "'");" class="browseButton">BROWSE MORE</button>
+        <button onclick="@("window.location.href='" + @Url.Action("TeacherSignUp", "User") + "'");" class="teacherButton">BECOME A TEACHER</button>
+        <button onclick="@("window.location.href='" + @Url.Action("StudentSignUp", "User") + "'");" class="studentButton">BECOME A STUDENT</button>
+    </section>
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+    <script src="~/Scripts/main.js"></script>
+    <script></script>
 </body>
+</html>

@@ -27,7 +27,7 @@ namespace Interdisciplinary.Controllers
             if (user != null && user.Password == model.Password)
             {
                 FormsAuthentication.SetAuthCookie(user.Email, model.RememberMe);
-               return RedirectToAction("Index", "Home");
+               return RedirectToAction("Index", "Category");
             }
             else {
                 ModelState.AddModelError("","Wrong credentials");
