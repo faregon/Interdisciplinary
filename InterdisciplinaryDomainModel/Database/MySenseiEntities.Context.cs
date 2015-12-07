@@ -25,9 +25,9 @@ namespace InterdisciplinaryDomainModel.Database
             throw new UnintentionalCodeFirstException();
         }
     
-        public virtual DbSet<Role> Roles { get; set; }
-        public virtual DbSet<User> Users { get; set; }
         public virtual DbSet<Category> Categories { get; set; }
         public virtual DbSet<Course> Courses { get; set; }
+        public virtual DbSet<Role> Roles { get; set; }
+        public virtual DbSet<User> Users { get; set; }
     }
 }

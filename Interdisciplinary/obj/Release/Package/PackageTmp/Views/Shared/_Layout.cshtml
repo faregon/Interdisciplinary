@@ -5,24 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@ViewBag.Title - MySensei</title>
     <link href="~/Content/Site.css" rel="stylesheet" type="text/css" />
-    <link href="~/Content/style/style.css" rel="stylesheet" />
 </head>
 <body>
     <header>
-        @Html.ActionLink("Mysensei", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
-        @Html.ActionLink("About", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+        <a href="@Url.Action("Login", "Login")"><img src="~/Content/Images/logo.png" /></a>
+        <h1>| ABOUT</h1>
+        @if (!User.Identity.IsAuthenticated)
+        {
+        <div class="signUpForm">
+            @using (Html.BeginForm("Login", "Login", FormMethod.Post, new { @class = "signupform-student" }))
+            {
+                @Html.AntiForgeryToken()
+                <input class="password" id="Password" name="Password" placeholder="Password" value="" type="password">
+                <input class="email" id="Email" name="Email" placeholder="Email" value="" type="text">
+                    <input class="submit" type="submit" value="Login" />
+            }
+                </div>
+        }
+        else {
+            @Html.ActionLink("Log out", "SignOut", "Login")
+        }
+        @if (User.IsInRole("Administrator"))
+        {
+            <a> @Html.ActionLink("Categories", "Index", "Categories", new { Area = "Admin" }, new { @class = "navbar-brand" })</a>
+            <a> @Html.ActionLink("Courses", "Index", "Courses", new { Area = "Admin" }, new { @class = "navbar-brand" })</a>
+            <a>@Html.ActionLink("Users", "Index", "Users", new { Area = "Admin" }, new { @class = "navbar-brand" })</a>
+        }
 
     </header>
                 
     <div>
         @RenderBody()
-        <hr />
         <footer>
             
         </footer>
     </div>
 
-    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
-    <script src="~/Scripts/bootstrap.min.js"></script>
 </body>
 </html>

@@ -10,21 +10,4 @@
     $(document).ready(rotateTerm);
    
 })();
-    //var actual = document.getElementById("teacher");
-
-    //var links = document.querySelectorAll(".clickable");
-
-    //for (var i = 0; i < links.length; i++) {
-    //    var link = links[i];
-    //    link.addEventListener("click", function (e) {
-    //        e.preventDefault();
-    //        actual.classList.toggle("show");
-    //        actual.classList.toggle("hide");
-    //        var box = document.getElementById(this.getAttribute("href"));
-    //        box.classList.toggle("show");
-    //        box.classList.toggle("hide");
-    //        actual = box;
-    //    });
-
-    //}
-
+    

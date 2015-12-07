@@ -22,6 +22,7 @@
             @using (Html.BeginForm("StudentSignUp", "User", FormMethod.Post, new { @class = "signupform-student" }))
             {
                 @Html.AntiForgeryToken()
+                @Html.ValidationSummary()
                 <p>
                     @Html.TextBoxFor(x => x.FirstName, new { placeholder = "First Name" })<br />
                     @Html.TextBoxFor(x => x.LastName, new { placeholder = "Last Name" })<br />
@@ -31,8 +32,6 @@
                     @Html.TextBoxFor(x => x.City, new { placeholder = "City" })
                     @Html.TextBoxFor(x => x.Address, new { placeholder = "Address" })<br />
                     @Html.TextBoxFor(x => x.Phone, new { placeholder = "Phone Number" })<br />
-
-                    @Html.ValidationSummary()
                 </p>
                 <input type="submit" value="Sign Up" class="signButton" />
             }

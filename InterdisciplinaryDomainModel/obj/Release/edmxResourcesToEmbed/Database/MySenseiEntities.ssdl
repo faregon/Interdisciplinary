@@ -13,7 +13,6 @@
     </Key>
     <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="CourseName" Type="varchar" MaxLength="255" />
-    <Property Name="UserID" Type="int" />
     <Property Name="CategoryID" Type="int" Nullable="false" />
   </EntityType>
   <EntityType Name="Role">
@@ -39,6 +38,14 @@
     <Property Name="Summary" Type="varchar" MaxLength="255" />
     <Property Name="Education" Type="varchar" MaxLength="255" />
   </EntityType>
+  <EntityType Name="UserCourse">
+    <Key>
+      <PropertyRef Name="UserID" />
+      <PropertyRef Name="CourseID" />
+    </Key>
+    <Property Name="UserID" Type="int" Nullable="false" />
+    <Property Name="CourseID" Type="int" Nullable="false" />
+  </EntityType>
   <EntityType Name="UserRole">
     <Key>
       <PropertyRef Name="UserID" />
@@ -61,14 +68,26 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="UserID">
-    <End Role="User" Type="Self.User" Multiplicity="0..1" />
-    <End Role="Course" Type="Self.Course" Multiplicity="*" />
+  <Association Name="UserCourse_Course">
+    <End Role="Course" Type="Self.Course" Multiplicity="1" />
+    <End Role="UserCourse" Type="Self.UserCourse" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Course">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="UserCourse">
+        <PropertyRef Name="CourseID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="UserCourse_User">
+    <End Role="User" Type="Self.User" Multiplicity="1" />
+    <End Role="UserCourse" Type="Self.UserCourse" Multiplicity="*" />
     <ReferentialConstraint>
       <Principal Role="User">
         <PropertyRef Name="ID" />
       </Principal>
-      <Dependent Role="Course">
+      <Dependent Role="UserCourse">
         <PropertyRef Name="UserID" />
       </Dependent>
     </ReferentialConstraint>
@@ -102,14 +121,19 @@
     <EntitySet Name="Course" EntityType="Self.Course" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Role" EntityType="Self.Role" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="User" EntityType="Self.User" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="UserCourse" EntityType="Self.UserCourse" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="UserRole" EntityType="Self.UserRole" Schema="dbo" store:Type="Tables" />
     <AssociationSet Name="CategoryID" Association="Self.CategoryID">
       <End Role="Category" EntitySet="Category" />
       <End Role="Course" EntitySet="Course" />
     </AssociationSet>
-    <AssociationSet Name="UserID" Association="Self.UserID">
-      <End Role="User" EntitySet="User" />
+    <AssociationSet Name="UserCourse_Course" Association="Self.UserCourse_Course">
       <End Role="Course" EntitySet="Course" />
+      <End Role="UserCourse" EntitySet="UserCourse" />
+    </AssociationSet>
+    <AssociationSet Name="UserCourse_User" Association="Self.UserCourse_User">
+      <End Role="User" EntitySet="User" />
+      <End Role="UserCourse" EntitySet="UserCourse" />
     </AssociationSet>
     <AssociationSet Name="UserRole_Role" Association="Self.UserRole_Role">
       <End Role="Role" EntitySet="Role" />

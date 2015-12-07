@@ -117,26 +117,26 @@
     <Content Include="Content\style\reset.scss" />
     <Content Include="Content\style\style.css.map" />
     <Content Include="Content\style\style.scss" />
+    <Content Include="Content\font\Logo_Font_FingerpaintRegular.ttf" />
+    <Content Include="Content\font\helv4light.ttf" />
     <Content Include="Areas\Admin\Views\web.config" />
     <Content Include="Areas\Admin\Views\_ViewStart.cshtml" />
     <Content Include="Areas\Admin\Views\Shared\_Layout.cshtml" />
-    <Content Include="Areas\Admin\Views\Users\Create.cshtml" />
-    <Content Include="Areas\Admin\Views\Users\Delete.cshtml" />
-    <Content Include="Areas\Admin\Views\Users\Details.cshtml" />
-    <Content Include="Areas\Admin\Views\Users\Edit.cshtml" />
-    <Content Include="Areas\Admin\Views\Users\Index.cshtml" />
-    <Content Include="Areas\Admin\Views\Courses\Create.cshtml" />
-    <Content Include="Areas\Admin\Views\Courses\Delete.cshtml" />
-    <Content Include="Areas\Admin\Views\Courses\Details.cshtml" />
-    <Content Include="Areas\Admin\Views\Courses\Edit.cshtml" />
-    <Content Include="Areas\Admin\Views\Courses\Index.cshtml" />
     <Content Include="Areas\Admin\Views\Categories\Create.cshtml" />
     <Content Include="Areas\Admin\Views\Categories\Delete.cshtml" />
     <Content Include="Areas\Admin\Views\Categories\Details.cshtml" />
     <Content Include="Areas\Admin\Views\Categories\Edit.cshtml" />
     <Content Include="Areas\Admin\Views\Categories\Index.cshtml" />
-    <Content Include="Content\font\Logo_Font_FingerpaintRegular.ttf" />
-    <Content Include="Content\font\helv4light.ttf" />
+    <Content Include="Areas\Admin\Views\Courses\Create.cshtml" />
+    <Content Include="Areas\Admin\Views\Courses\Delete.cshtml" />
+    <Content Include="Areas\Admin\Views\Courses\Details.cshtml" />
+    <Content Include="Areas\Admin\Views\Courses\Edit.cshtml" />
+    <Content Include="Areas\Admin\Views\Courses\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\Users\Create.cshtml" />
+    <Content Include="Areas\Admin\Views\Users\Delete.cshtml" />
+    <Content Include="Areas\Admin\Views\Users\Details.cshtml" />
+    <Content Include="Areas\Admin\Views\Users\Edit.cshtml" />
+    <Content Include="Areas\Admin\Views\Users\Index.cshtml" />
     <None Include="Properties\PublishProfiles\mys3nsei.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
@@ -153,7 +153,6 @@
     <Compile Include="Areas\Admin\Controllers\CoursesController.cs" />
     <Compile Include="Areas\Admin\Controllers\UsersController.cs" />
     <Compile Include="Controllers\CategoryController.cs" />
-    <Compile Include="Controllers\CourseController.cs" />
     <Compile Include="Controllers\LoginController.cs" />
     <Compile Include="Controllers\UserController.cs" />
     <Compile Include="Global.asax.cs">
@@ -175,7 +174,7 @@
     <Content Include="Views\Category\Index.cshtml" />
     <Content Include="Views\User\StudentSignUp.cshtml" />
     <Content Include="Views\User\TeacherSignUp.cshtml" />
-    <Content Include="Views\Shared\_Login.cshtml" />
+    <Content Include="Views\Category\Courses.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

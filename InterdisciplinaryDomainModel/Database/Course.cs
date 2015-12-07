@@ -14,12 +14,18 @@ namespace InterdisciplinaryDomainModel.Database
     
     public partial class Course
     {
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
+        public Course()
+        {
+            this.Users = new HashSet<User>();
+        }
+    
         public int ID { get; set; }
         public string CourseName { get; set; }
         public int CategoryID { get; set; }
-        public Nullable<int> UserID { get; set; }
     
         public virtual Category Category { get; set; }
-        public virtual User User { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<User> Users { get; set; }
     }
 }

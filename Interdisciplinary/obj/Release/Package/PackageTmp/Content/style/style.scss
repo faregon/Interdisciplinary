@@ -1,46 +1,176 @@
+$desktop: "screen and (min-width : 480px)";
 @import 'reset';
 
-$primary-color: black;
-$font-stack:    Verdanna, sans-serif;
-
-body {
-    margin: 0 auto;
-    color: $primary-color;
-    font: $font-stack;
-
+/*fonts for the teacher and student signup page*/
+@font-face {
+    font-family: 'Logo_Font_FingerpaintRegular';
+    src: url('../font/Logo_Font_FingerpaintRegular.ttf') format('truetype');
 }
 
- .LoginForm{
-font : $font-stack;
+@font-face {
+    font-family: 'helv4light';
+    src: url('../font/helv4light.ttf') format('truetype');
+}
+/*variables for the font and background color*/
+$primary-color: black;
+$font-family: Logo_Font_FingerpaintRegular;
+$bckd-color: #1b1b1b;
+/*mobile styling goes here*/
+body, html {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    color: $primary-color;
+    font-family: $font-family;
+}
+
+header {
+    height: 10%;
+    width: 100%;
+    background-color: $bckd-color;
+    opacity: 0.8;
+}
+.head {
+    background-color: orangered;
+    height: 10%;
+
+    h2 {
+        font: $font-family;
+        text-align: center;
+        padding-top: 4%;
+    }
+}
+
+.container {
+    background-color: $bckd-color;
+    opacity: 0.8;
+    height: 100%;
+   
+
+    .LoginForm {
+        font-family: $font-family;
 top: 5%;
 border: 1px solid black;
  }          
- .navbar-brand {
-     height: 15%;
-     display: block;
-     border: 1px solid black;
- }
+
+
+
  .navbar-inverse {
     background-color: #222;
     border-color: #080808;
     }
+
  .navbar-fixed-top {
     top: 0px;
     z-index: 1030;
 }
- .signupform {
-   float: right;
-     border: 1px dotted black;
-     margin: 20px;
-      .SignUpForm{border: 1px dotted black;}
-} 
+/*styling for the forms look in mobile*/
+    .signupform-student {
+        height:80%;
+        margin-left: 10%;
+        display: inline-block;
 
- 
- .signupform-student
- {
-     border: 1px solid black;
-     margin-top: 15%;
-     float: right;
+        
+        input {
+            font-family: helv4light;
+            width: 300px;
+         border: 5px solid black;
+    display: block;
+    box-sizing: border-box;
+     }
+             label{
+     color: #1b1b1b;
+    }
+
+        #Birthday {
+            width: 200px;
+     }
+
+     #City {
+         float: left;
+            width: 100px;
+     }
+
+     #Address {
+            width: 200px;
  }
+}
 
+    ::-webkit-input-placeholder, :-moz-placeholder, ::-moz-placeholder, :-ms-input-placeholder {
+   color: $primary-color;  
+        font: $font-family;
+}
+    .signButton {
+        background-color: #47b7b7;
+        margin-left: 100px;
+        width: 100px !important;
+    }
+    .box {
+        height: 100vh;
+    }
+    .show {
+        display: block;
+}
+
+    .hide {
+        display: none;
+    }
+}
+
+/*desktop styles go over here*/
+@media #{$desktop}{
+    header {
+    height: 10%;
+    width: 100%;
+    background-color: $bckd-color;
+    opacity: 0.8;
+}
+    .container{
+        height:100vh;
+    }
+/*forms styling for the desktop version of the website*/
+        .signupform-student {
+        margin-right: 40%;
+        display: inline-block;
+        float: right;
+
+        input {
+            font-family: helv4light;
+            width: 700px;
+         border: 5px solid black;
+    display: block;
+    box-sizing: border-box;
+
+     }
+            label{
+        color: white;
+    }
+        
+
+        #Birthday {
+            width: 200px;
+     }
+
+
+}
+            .signButton {
+        background-color: #47b7b7;
+        margin-left: 100px;
+        width: 100px !important;
+    }
+            .head {
+    background-color: orangered;
+    height: 10%;
+
+    h2 {
+        font: $font-family;
+        text-align: center;
+        padding-top: 2%;
+    }
+}
+
+footer {
+    display:none;
+}
+}
 /*# sourceMappingURL=style.css.map */

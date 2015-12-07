@@ -17,7 +17,7 @@ namespace Interdisciplinary.Areas.Admin.Controllers
         // GET: Admin/Courses
         public ActionResult Index()
         {
-            var courses = db.Courses.Include(c => c.Category).Include(c => c.User);
+            var courses = db.Courses.Include(c => c.Category);
             return View(courses.ToList());
         }
 
@@ -40,7 +40,6 @@ namespace Interdisciplinary.Areas.Admin.Controllers
         public ActionResult Create()
         {
             ViewBag.CategoryID = new SelectList(db.Categories, "ID", "CategoryName");
-            ViewBag.UserID = new SelectList(db.Users, "ID", "FirstName");
             return View();
         }
 
@@ -49,7 +48,7 @@ namespace Interdisciplinary.Areas.Admin.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "ID,CourseName,CategoryID,UserID")] Course course)
+        public ActionResult Create([Bind(Include = "ID,CourseName,CategoryID")] Course course)
         {
             if (ModelState.IsValid)
             {
@@ -59,7 +58,6 @@ namespace Interdisciplinary.Areas.Admin.Controllers
             }
 
             ViewBag.CategoryID = new SelectList(db.Categories, "ID", "CategoryName", course.CategoryID);
-            ViewBag.UserID = new SelectList(db.Users, "ID", "FirstName", course.UserID);
             return View(course);
         }
 
@@ -76,7 +74,6 @@ namespace Interdisciplinary.Areas.Admin.Controllers
                 return HttpNotFound();
             }
             ViewBag.CategoryID = new SelectList(db.Categories, "ID", "CategoryName", course.CategoryID);
-            ViewBag.UserID = new SelectList(db.Users, "ID", "FirstName", course.UserID);
             return View(course);
         }
 
@@ -85,7 +82,7 @@ namespace Interdisciplinary.Areas.Admin.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "ID,CourseName,CategoryID,UserID")] Course course)
+        public ActionResult Edit([Bind(Include = "ID,CourseName,CategoryID")] Course course)
         {
             if (ModelState.IsValid)
             {
@@ -94,7 +91,6 @@ namespace Interdisciplinary.Areas.Admin.Controllers
                 return RedirectToAction("Index");
             }
             ViewBag.CategoryID = new SelectList(db.Categories, "ID", "CategoryName", course.CategoryID);
-            ViewBag.UserID = new SelectList(db.Users, "ID", "FirstName", course.UserID);
             return View(course);
         }
 

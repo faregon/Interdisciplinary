@@ -4,22 +4,37 @@
     ViewBag.Title = "Index";
 }
 
-<h2>Categories1</h2>
+
 <!DOCTYPE html>
 
 <html>
 <head>
     <meta name="viewport" content="width=device-width" />
+    <link href="~/Content/Site.css" rel="stylesheet" />
     <title>Categories</title>
 
 </head>
-<body>
-    <div>
-        @foreach (var category in Model)
-        {
-          <p><a>@category.CategoryName</a></p> 
-        }
 
-    </div>
+<body>
+
+    <h2 id="categoryLabel">CATEGORIES</h2>
+
+    @foreach (var category in Model)
+            {
+        <div class="categoryTiles"> @Html.ActionLink(category.CategoryName, "Courses", "Category", new { id = category.ID }, new { @class = "" })</div>
+    }
+
+
+    <footer class="coursesFooter signUp">
+        <a href="@Url.Action("Login", "Login")"><img src="~/Content/Images/logo.png" /></a>
+        <h1>CONTACT</h1>
+        <p>Sønderhøj 30,</p>
+        <p>Viby J</p>
+        <p>8260</p>
+        <p>Aarhus,Denmark</p>
+        <p>Email</p>
+        <p>Tlf</p>
+        <img class="social" src="~/Content/Images/social.png" />
+    </footer>
 </body>
 </html>

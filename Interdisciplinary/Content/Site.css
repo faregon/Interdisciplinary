@@ -46,18 +46,15 @@ table {
   border-spacing: 0; }
 
 @font-face {
-  font-family: 'Logo_Font_FingerpaintRegular';
-  src: url("../font/Logo_Font_FingerpaintRegular.ttf") format("truetype"); }
-@font-face {
   font-family: 'helv4light';
-  src: url("../font/helv4light.ttf") format("truetype"); }
+  src: url("font/helv4light.ttf") format("truetype"); }
 html, body {
   width: 100%;
-  height: 100%;
-  font-family: helv4light; }
+  height: 100%; }
 
 section {
-  width: 100%; }
+  width: 100%;
+  font-family: helv4light; }
 
 .quotes {
   color: white; }
@@ -75,6 +72,7 @@ header .email {
 header .password {
   display: none; }
 
+/* mobile home page */
 .intro {
   height: 40%;
   background-image: url(../Content/Images/Binoculers.jpg);
@@ -160,7 +158,30 @@ header .password {
   display: inline-block;
   text-align: center; }
 
+/* mobile and dekstop page for Categories page */
+#categoryLabel {
+  width: 100%;
+  height: 10%;
+  background-color: #47b7b7;
+  text-transform: uppercase;
+  text-align: center; }
+
+.categoryTiles {
+  width: 50%;
+  height: 35vh;
+  text-align: center;
+  background-color: #DB8A52;
+  color: white;
+  text-transform: uppercase;
+  line-height: 8;
+  box-shadow: inset 0px 1px 0px 1px white; }
+  .categoryTiles:nth-child(odd) {
+    float: right; }
+  .categoryTiles:link {
+    color: white; }
+
 @media screen and (min-width: 480px) {
+  /* desktop home page for home(log in) page */
   header {
     width: 100%;
     height: 10%;
@@ -290,6 +311,32 @@ header .password {
     .signUp p {
       margin-left: 1%;
       color: white;
-      display: block; } }
+      display: block; }
+
+  /* desktop Courses page */
+  .courseHead {
+    height: 20%;
+    width: 100%;
+    background-color: #47b7b7;
+    text-transform: uppercase;
+    text-align: center; }
+
+  .containerCourses {
+    background-color: black;
+    opacity: 0.6;
+    height: 80vh;
+    overflow: auto;
+    max-height: 100vh; }
+    .containerCourses .displayCourses h3, .containerCourses .displayCourses h2 {
+      height: 5vh;
+      width: 100%;
+      background-color: #47b7b7;
+      text-transform: uppercase;
+      text-align: center; }
+    .containerCourses .displayCourses h2 {
+      background-color: #DB8A52; }
+
+  .coursesFooter {
+    height: 35vh; } }
 
 /*# sourceMappingURL=Site.css.map */

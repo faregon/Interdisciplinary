@@ -12,8 +12,10 @@ namespace Interdisciplinary.Controllers
 {
     public class LoginController : Controller
     {
+        // connection with the domain model
         private MysenseiEntities DB = new MysenseiEntities();
         // GET: Login
+        // Login action method
         public ActionResult Login()
         {
             return View();
@@ -27,14 +29,22 @@ namespace Interdisciplinary.Controllers
             if (user != null && user.Password == model.Password)
             {
                 FormsAuthentication.SetAuthCookie(user.Email, model.RememberMe);
-               return RedirectToAction("Index", "Category");
+                ModelState.Clear();
+                return RedirectToAction("Index", "Category");
+                
             }
             else {
-                ModelState.AddModelError("","Wrong credentials");
-                return RedirectToAction("Index", "Category");
+                ModelState.Clear();
+                return RedirectToAction("Login", "Login");
             }
+           
             return View();
         }
-      
+        // sign out action method
+        public ActionResult SignOut()
+        {
+            FormsAuthentication.SignOut();
+            return RedirectToAction("Login");
+        }
     }
 }

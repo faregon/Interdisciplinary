@@ -5,14 +5,14 @@
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
       <Diagram DiagramId="7aaa759243864e569b834f27c1733b3f" Name="Diagram1" ZoomLevel="86">
-        <EntityTypeShape EntityType="MysenseiModel.Role" Width="1.5" PointX="0.75" PointY="2.125" IsExpanded="true" />
-        <EntityTypeShape EntityType="MysenseiModel.User" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
-        <AssociationConnector Association="MysenseiModel.UserRole" ManuallyRouted="false" />
-        <EntityTypeShape EntityType="MysenseiModel.Category" Width="1.5" PointX="6.875" PointY="1.5" />
-        <EntityTypeShape EntityType="MysenseiModel.Course" Width="1.5" PointX="4.875" PointY="1" />
+        <EntityTypeShape EntityType="MysenseiModel.Category" Width="1.5" PointX="0.75" PointY="2" />
+        <EntityTypeShape EntityType="MysenseiModel.Course" Width="1.5" PointX="3" PointY="1.75" />
+        <EntityTypeShape EntityType="MysenseiModel.Role" Width="1.5" PointX="3" PointY="6" />
+        <EntityTypeShape EntityType="MysenseiModel.User" Width="1.5" PointX="5.25" PointY="1" />
         <AssociationConnector Association="MysenseiModel.CategoryID" />
-        <AssociationConnector Association="MysenseiModel.UserID" />
-        </Diagram>
+        <AssociationConnector Association="MysenseiModel.UserCourse" />
+        <AssociationConnector Association="MysenseiModel.UserRole" />
+      </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>
 </edmx:Edmx>

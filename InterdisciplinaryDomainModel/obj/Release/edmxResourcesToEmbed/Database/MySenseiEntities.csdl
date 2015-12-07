@@ -1,51 +1,21 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Schema Namespace="MysenseiModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
-  <EntityType Name="Role">
-    <Key>
-      <PropertyRef Name="ID" />
-    </Key>
-    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-    <Property Name="RoleNname" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
-    <NavigationProperty Name="Users" Relationship="Self.UserRole" FromRole="Role" ToRole="User" />
-  </EntityType>
-  <EntityType Name="User">
-    <Key>
-      <PropertyRef Name="ID" />
-    </Key>
-    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-    <Property Name="FirstName" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
-    <Property Name="LastName" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
-    <Property Name="Email" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
-    <Property Name="Password" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
-    <Property Name="Birthday" Type="DateTime" Precision="0" />
-    <Property Name="Phone" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
-    <Property Name="City" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
-    <Property Name="Address" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
-    <Property Name="Summary" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
-    <Property Name="Education" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
-    <NavigationProperty Name="Roles" Relationship="Self.UserRole" FromRole="User" ToRole="Role" />
-    <NavigationProperty Name="Courses" Relationship="MysenseiModel.UserID" FromRole="User" ToRole="Course" />
-  </EntityType>
-  <Association Name="UserRole">
-    <End Role="Role" Type="Self.Role" Multiplicity="*" />
-    <End Role="User" Type="Self.User" Multiplicity="*" />
-  </Association>
   <EntityContainer Name="MysenseiEntities" annotation:LazyLoadingEnabled="true">
-    <EntitySet Name="Roles" EntityType="Self.Role" />
-    <EntitySet Name="Users" EntityType="Self.User" />
-    <AssociationSet Name="UserRole" Association="Self.UserRole">
-      <End Role="Role" EntitySet="Roles" />
-      <End Role="User" EntitySet="Users" />
-    </AssociationSet>
     <EntitySet Name="Categories" EntityType="MysenseiModel.Category" />
     <EntitySet Name="Courses" EntityType="MysenseiModel.Course" />
+    <EntitySet Name="Roles" EntityType="MysenseiModel.Role" />
+    <EntitySet Name="Users" EntityType="MysenseiModel.User" />
     <AssociationSet Name="CategoryID" Association="MysenseiModel.CategoryID">
       <End Role="Category" EntitySet="Categories" />
       <End Role="Course" EntitySet="Courses" />
     </AssociationSet>
-    <AssociationSet Name="UserID" Association="MysenseiModel.UserID">
-      <End Role="User" EntitySet="Users" />
+    <AssociationSet Name="UserCourse" Association="MysenseiModel.UserCourse">
       <End Role="Course" EntitySet="Courses" />
+      <End Role="User" EntitySet="Users" />
+    </AssociationSet>
+    <AssociationSet Name="UserRole" Association="MysenseiModel.UserRole">
+      <End Role="Role" EntitySet="Roles" />
+      <End Role="User" EntitySet="Users" />
     </AssociationSet>
   </EntityContainer>
   <EntityType Name="Category">
@@ -62,10 +32,35 @@
     </Key>
     <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Name="CourseName" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
-    <Property Name="UserID" Type="Int32" />
     <Property Name="CategoryID" Type="Int32" Nullable="false" />
     <NavigationProperty Name="Category" Relationship="MysenseiModel.CategoryID" FromRole="Course" ToRole="Category" />
-    <NavigationProperty Name="User" Relationship="MysenseiModel.UserID" FromRole="Course" ToRole="User" />
+    <NavigationProperty Name="Users" Relationship="MysenseiModel.UserCourse" FromRole="Course" ToRole="User" />
+  </EntityType>
+  <EntityType Name="Role">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="RoleNname" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Users" Relationship="MysenseiModel.UserRole" FromRole="Role" ToRole="User" />
+  </EntityType>
+  <EntityType Name="User">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="FirstName" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="LastName" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Email" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Password" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Birthday" Type="DateTime" Precision="0" />
+    <Property Name="Phone" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="City" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Address" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Summary" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Education" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Courses" Relationship="MysenseiModel.UserCourse" FromRole="User" ToRole="Course" />
+    <NavigationProperty Name="Roles" Relationship="MysenseiModel.UserRole" FromRole="User" ToRole="Role" />
   </EntityType>
   <Association Name="CategoryID">
     <End Type="MysenseiModel.Category" Role="Category" Multiplicity="1">
@@ -81,16 +76,12 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="UserID">
-    <End Type="MysenseiModel.User" Role="User" Multiplicity="0..1" />
+  <Association Name="UserCourse">
     <End Type="MysenseiModel.Course" Role="Course" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="User">
-        <PropertyRef Name="ID" />
-      </Principal>
-      <Dependent Role="Course">
-        <PropertyRef Name="UserID" />
-      </Dependent>
-    </ReferentialConstraint>
+    <End Type="MysenseiModel.User" Role="User" Multiplicity="*" />
+  </Association>
+  <Association Name="UserRole">
+    <End Type="MysenseiModel.Role" Role="Role" Multiplicity="*" />
+    <End Type="MysenseiModel.User" Role="User" Multiplicity="*" />
   </Association>
 </Schema>

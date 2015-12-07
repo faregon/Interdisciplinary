@@ -1,0 +1,69 @@
+﻿@model IEnumerable<InterdisciplinaryDomainModel.Database.User>
+
+@{
+    ViewBag.Title = "Courses";
+}
+
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="~/Content/Site.css" rel="stylesheet" />
+    <title>Index</title>
+</head>
+<body >
+
+    <header></header>
+    <div class="containerCourses">
+        <section class="courseHead">
+            <h2>Courses</h2>
+            <hr />
+            <br />
+        </section>
+        <section class="displayCourses">
+            @foreach (var item in Model)
+            {
+                if (item.Courses.Any(c => c.CategoryID == ViewBag.ID))
+                {
+
+                    <h2> @Html.DisplayFor(modelItem => item.FirstName)</h2>
+
+                    <h2>
+                        @Html.DisplayFor(modelItem => item.LastName)
+                    </h2>
+
+                    <h2>
+                       Telephone: @Html.DisplayFor(modelItem => item.Phone)
+                    </h2>
+                    foreach (var course in item.Courses)
+                    {
+
+                        if (course.CategoryID == ViewBag.ID)
+                        {
+                            <h3>  @course.CourseName</h3>
+
+                        }
+                    }
+                    <br />
+                }
+            }
+            
+        </section>
+         
+    </div>
+    <footer class="coursesFooter signUp">
+        <a href="@Url.Action("Login", "Login")"><img src="~/Content/Images/logo.png" /></a>
+        <h1>CONTACT</h1>
+        <p>Sønderhøj 30,</p>
+        <p>Viby J</p>
+        <p>8260</p>
+        <p>Aarhus,Denmark</p>
+        <p>Email</p>
+        <p>Tlf</p>
+        <img class="social" src="~/Content/Images/social.png" />
+    </footer>
+</body>
+</html>
